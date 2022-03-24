@@ -6,11 +6,22 @@
     <servlet>
         <description>This is a test of servlet</description>
         <display-name>This is the display name of a test</display-name>
-        <servlet-name>ServletTest</servlet-name>
-        <servlet-class>ServletTest</servlet-class>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
     </servlet>
+    <servlet>
+        <description>This is a three parameter servlet</description>
+        <display-name>This is a three parameter servlet</display-name>
+        <servlet-name>ThreeParams</servlet-name>
+        <servlet-class>ThreeParams</servlet-class>
+    </servlet>
+
     <servlet-mapping>
-        <servlet-name>ServletTest</servlet-name>
-        <url-pattern>ServletTest</url-pattern>
+        <servlet-name>HelloWorld</servlet-name>
+        <url-pattern>/HelloWorld</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThreeParams</servlet-name>
+        <url-pattern>/ThreeParams</url-pattern>
     </servlet-mapping>
 </web-app>
